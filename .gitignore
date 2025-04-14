@@ -1,5 +1,9 @@
-# Ignore pychache
+# Ignore obsidian
+.obsidian/
 
-# Ignore pytest
+# Ignore pytest & pychache
 *.pytest_cache/
 **/__pycache__/
+
+# Ignore info
+ads_utp.egg-info
