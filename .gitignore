@@ -3,4 +3,3 @@
 # Ignore pytest
 *.pytest_cache/
 **/__pycache__/**
-ads-utp/data_structures/__pycache__
