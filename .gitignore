@@ -1,5 +1,6 @@
 # Ignore obsidian
 .obsidian/
+.ropeproject
 
 # Ignore pytest & pychache
 *.pytest_cache/
