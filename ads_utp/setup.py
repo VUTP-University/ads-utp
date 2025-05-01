@@ -11,7 +11,7 @@ setup(
     url="",
     packages=find_packages(),
     install_requires=[
-        # List dependencies
+        "pytest>=8.0.0"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
