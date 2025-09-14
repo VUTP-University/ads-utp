@@ -37,7 +37,7 @@ class Graph():
             self.graph[node] = []
         
             
-    def add_edge(self, from_node, to_node, weigth):
+    def add_edge(self, from_node, to_node, weigth=None):
         """
         Adds a directed edge from from_node to to_node with a specified weight.
         

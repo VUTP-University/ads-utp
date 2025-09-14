@@ -16,4 +16,7 @@ from data_structures.linked_list.basic_linked_list import *
 # Import Binary Search Tree Modules
 from binary_tree.binary_search_tree import BST
 
+# Import Graph Modules
+from graph.graph import Graph
+
 # You can add test cases here to test the functionalities of the imported modules.
