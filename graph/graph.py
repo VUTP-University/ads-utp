@@ -37,7 +37,7 @@ class Graph():
             self.graph[node] = []
         
             
-    def add_edge(self, from_node, to_node, weidth):
+    def add_edge(self, from_node, to_node, weigth):
         """
         Adds a directed edge from from_node to to_node with a specified weight.
         
@@ -50,7 +50,7 @@ class Graph():
             self.add_node(from_node)
         if to_node not in self.graph:
             self.add_node(to_node)
-        self.graph[from_node].append((to_node, weidth))
+        self.graph[from_node].append((to_node, weigth))
         
     
     def get_neighbors(self, node):
