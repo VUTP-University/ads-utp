@@ -6,5 +6,9 @@
 *.pytest_cache/
 **/__pycache__/
 
-# Ignore info
-ads_utp.egg-info
+# Ignore Various Code Editors Configurations
+.vscode/
+.idea/
+
+# Ignore Python venv
+venv/

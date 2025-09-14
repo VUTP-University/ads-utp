@@ -53,3 +53,10 @@ def string_reverse(str):
         str: The reverse of the input string.
     """
     return str[::-1]
+
+
+# Example usage
+print("At index 2:", string_indexing("Hello, World!", 2))  # Output: 'l'
+print("Slicing with step 2:", string_slicing_step("Hello, World!", 0, 13, 2))  # Output: 'Hlo ol!'
+print("Concatenation:", string_concatenation("Hello, ", "World!"))  # Output: 'Hello, World!'
+print("Reversed string:", string_reverse("Hello, World!"))  # Output: '!dlroW ,olleH'
