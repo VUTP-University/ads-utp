@@ -11,7 +11,8 @@ It includes creating a set, adding elements, removing elements, and checking for
 
 def create_empty_set():
     """Create and return a new empty set."""
-    return set()
+    my_set = set()
+    return my_set, f"Empty set created: {type(my_set)}"
 
 
 def create_new_set(elements):
@@ -39,9 +40,21 @@ def is_member(s, element):
     return element in s
     
 # Example usage
-print("Creating an empty set:", create_empty_set())
-print("Creating a new set with elements [1, 2, 3]:", create_new_set([1, 2, 3]))
-print("Adding element 4 to the set {1, 2, 3}:", add_element(create_new_set([1, 2, 3]), 4))
-print("Discarding element 2 from the set {1, 2, 3}:", discard_element(create_new_set([1, 2, 3]), 2))
-print("Updating the set {1, 2, 3} with elements [4, 5]:", update_set(create_new_set([1, 2, 3]), [4, 5]))
-print("Checking if 3 is a member of the set {1, 2, 3}:", is_member(create_new_set([1, 2, 3]), 3))
+if __name__ == "__main__":
+    empty_set, msg = create_empty_set()
+    print(msg)
+    
+    my_set = create_new_set([1, 2, 3])
+    print(f"New set created: {my_set}")
+    
+    add_element(my_set, 4)
+    print(f"Set after adding 4: {my_set}")
+    
+    discard_element(my_set, 2)
+    print(f"Set after discarding 2: {my_set}")
+    
+    update_set(my_set, [5, 6])
+    print(f"Set after updating with [5, 6]: {my_set}")
+    
+    print(f"Is 3 a member of the set? {'Yes' if is_member(my_set, 3) else 'No'}")
+    print(f"Is 2 a member of the set? {'Yes' if is_member(my_set, 2) else 'No'}")

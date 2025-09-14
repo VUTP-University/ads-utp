@@ -28,9 +28,13 @@ def set_symmetric_difference(set1, set2):
 
 
 # Example usage
-set_a = {1, 2, 3}
-set_b = {3, 4, 5}
-print("Set Union:", set_union(set_a, set_b))
-print("Set Intersection:", set_intersection(set_a, set_b))
-print("Set Difference (A - B):", set_difference(set_a, set_b))
-print("Set Symmetric Difference:", set_symmetric_difference(set_a, set_b))
+if __name__ == "__main__":
+    set_a = {1, 2, 3, 4}
+    set_b = {3, 4, 5, 6}
+
+    print("Set A:", set_a)
+    print("Set B:", set_b)
+    print("Union:", set_union(set_a, set_b))
+    print("Intersection:", set_intersection(set_a, set_b))
+    print("Difference (A - B):", set_difference(set_a, set_b))
+    print("Symmetric Difference:", set_symmetric_difference(set_a, set_b))

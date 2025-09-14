@@ -64,7 +64,10 @@ def string_reverse(str):
 
 
 # Example usage
-print("At index 2:", string_indexing("Hello, World!", 2))  # Output: 'l'
-print("Slicing with step 2:", string_slicing_step("Hello, World!", 0, 13, 2))  # Output: 'Hlo ol!'
-print("Concatenation:", string_concatenation("Hello, ", "World!"))  # Output: 'Hello, World!'
-print("Reversed string:", string_reverse("Hello, World!"))  # Output: '!dlroW ,olleH'
+if __name__ == "__main__":
+    sample_str = "Hello, World!"
+    print("Original String:", sample_str)
+    print("Character at index 7:", string_indexing(sample_str, 7))
+    print("Substring from index 0 to 5 with step 1:", string_slicing_step(sample_str, 0, 5, 1))
+    print("Concatenation of 'Hello' and ' Python':", string_concatenation("Hello", " Python"))
+    print("Reversed String:", string_reverse(sample_str))

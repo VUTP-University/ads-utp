@@ -113,10 +113,13 @@ def list_sort(lst):
 
 
 # Example usage
-print("List Length:", list_length([1, 2, 3, 4]))  # Output: 4
-print("List Append:", list_append([1, 2, 3], 4))  # Output: [1, 2, 3, 4]
-print("List Pop:", list_pop([1, 2, 3, 4]))        # Output: 4
-print("List Insert:", list_insert([1, 2, 4], 2, 3)) # Output: [1, 2, 3, 4]
-print("List Remove:", list_remove([1, 2, 3, 4], 3)) # Output: [1, 2, 4]
-print("List Search:", list_search([1, 2, 3, 4], 3)) # Output: 2
-print("List Sort:", list_sort([4, 2, 3, 1]))       # Output: [1, 2, 3, 4]
+if __name__ == "__main__":
+    sample_list = [5, 3, 8, 1, 2]
+    print("Original List:", sample_list) # Original List: [5, 3, 8, 1, 2]
+    print("Length:", list_length(sample_list)) # Length: 5
+    print("Append 4:", list_append(sample_list, 4)) # Append 4: [5, 3, 8, 1, 2, 4]
+    print("Pop:", list_pop(sample_list)) # Pop: 4
+    print("Insert 7 at index 2:", list_insert(sample_list, 2, 7)) # Insert 7 at index 2: [5, 3, 7, 8, 1, 2]
+    print("Remove 3:", list_remove(sample_list, 3)) # Remove 3: [5, 7, 8, 1, 2]
+    print("Search for 8:", list_search(sample_list, 8)) # Search for 8: 2
+    print("Sorted List:", list_sort(sample_list)) # Sorted List: [1, 2, 5, 7, 8]

@@ -58,7 +58,7 @@ def list_square(lst):
 
 
 # Example usage
-print("Extended list of [1, 2, 3] and [4, 5]:", list_extend([1, 2, 3], [4, 5]))  # Output: [1, 2, 3, 4, 5]
-print("List after replacing index 2 with 10 in [1, 2, 3, 4]:", replace_index([1, 2, 3, 4], 2, 10))  # Output: [1, 2, 10, 4]
-print("Squared list of [1, 2, 3, 4]:", list_square([1, 2, 3, 4]))  # Output: [1, 4, 9, 16]
-print("Squared list of [1, 'a', 3]:", list_square([1, 'a', 3]))  # Raises ValueError
+if __name__ == "__main__":
+    print(list_extend([1, 2, 3], [4, 5, 6]))  # Output: [1, 2, 3, 4, 5, 6]
+    print(replace_index([1, 2, 3], 1, 99))     # Output: [1, 99, 3]
+    print(list_square([1, 2, 3]))               # Output: [1, 4, 9]

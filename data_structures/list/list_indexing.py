@@ -52,6 +52,17 @@ def list_reverse(lst):
 
 
 # Example usage
-print("Index of 3 in [1, 2, 3, 4, 3]:", list_index([1, 2, 3, 4, 3], 3))  # Output: 2
-print("Slice of [1, 2, 3, 4, 5] from index 1 to 4:", list_slice([1, 2, 3, 4, 5], 1, 4))  # Output: [2, 3, 4]
-print("Reversed list of [1, 2, 3, 4, 5]:", list_reverse([1, 2, 3, 4, 5]))  # Output: [5, 4, 3, 2, 1]
+if __name__ == "__main__":
+    my_list = [10, 20, 30, 40, 50]
+
+    # Find index of an item
+    index = list_index(my_list, 30)
+    print(f"Index of 30: {index}")  # Output: Index of 30: 2
+
+    # Slice the list
+    sliced = list_slice(my_list, 1, 4)
+    print(f"Sliced list (1 to 4): {sliced}")  # Output: Sliced list (1 to 4): [20, 30, 40]
+
+    # Reverse the list
+    reversed_list = list_reverse(my_list)
+    print(f"Reversed list: {reversed_list}")  # Output: Reversed list: [50, 40, 30, 20, 10]

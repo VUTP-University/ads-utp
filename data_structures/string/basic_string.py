@@ -124,24 +124,26 @@ def string_rstrip(str):
     return str.rstrip()
 
 
-
 # Example usage
-print("String Length:", string_length("Hello, World!"))  # Output: 13
-print("Substring Count:", substring_count("Hello, World! Hello!", "Hello"))  # Output: 2
-print("Substring Index:", substring_index("Hello, World!", "World"))  # Output: 7
-print("Substring Index Last:", substring_index_last("Hello, World! Hello!", "Hello"))  # Output: 13
-print("Substring Index All:", substring_index_all("Hello, World! Hello!", "Hello"))  # Output: [0, 13]
-print("Substring Index All (not found):", substring_index_all("Hello, World!", "Python"))  # Output: []
-print("Substring Index All (overlapping):", substring_index_all("aaaaa", "aa"))  # Output: [0, 1, 2, 3]
-print("Substring Index All (empty substring):", substring_index_all("Hello", ""))  # Output: [0, 1, 2, 3, 4, 5]
-print("Substring Index All (empty string):", substring_index_all("", "a"))  # Output: []
-print("Substring Index All (both empty):", substring_index_all("", ""))  # Output: [0]
-print("Substring Index All (no occurrence):", substring_index_all("abcdef", "gh"))  # Output: []
-print("Substring Index All (single character):", substring_index_all("banana", "a"))  # Output: [1, 3, 5]
-print("Substring Index All (case sensitive):", substring_index_all("Hello hello HeLLo", "Hello"))  # Output: [0]
-print("Substring Index All (special characters):", substring_index_all("!@#$%^&*()!@#", "!@"))  # Output: [0, 10]
-print("Substring Index All (long substring):", substring_index_all("ababababab", "abab"))  # Output: [0, 2, 4]
-print("String Strip:", string_strip("   Hello, World!   "))  # Output: "Hello, World!"
-print("String LStrip:", string_lstrip("   Hello, World!   "))  # Output: "Hello, World!   "
-print("String RStrip:", string_rstrip("   Hello, World!   "))  # Output: "   Hello, World!"
-print("String Strip (no whitespace):", string_strip("Hello"))  # Output: "Hello"
+if __name__ == "__main__":
+    print("String Length:", string_length("Hello, World!"))  # Output: 13
+    print("Substring Count:", substring_count("Hello, World! Hello!", "Hello"))  # Output: 2
+    print("Substring Index:", substring_index("Hello, World!", "World"))  # Output: 7
+    print("Substring Index Last:", substring_index_last("Hello, World! Hello!", "Hello"))  # Output: 13
+    print("Substring Index All:", substring_index_all("Hello, World! Hello!", "Hello"))  # Output: [0, 13]
+    print("Substring Index All (not found):", substring_index_all("Hello, World!", "Python"))  # Output: []
+    print("Substring Index All (overlapping):", substring_index_all("aaaaa", "aa"))  # Output: [0, 1, 2, 3]
+    print("Substring Index All (empty substring):", substring_index_all("Hello", ""))  # Output: [0, 1, 2, 3, 4, 5]
+    print("Substring Index All (empty string):", substring_index_all("", "a"))  # Output: []
+    print("Substring Index All (both empty):", substring_index_all("", ""))  # Output: [0]
+    print("Substring Index All (no occurrence):", substring_index_all("abcdef", "gh"))  # Output: []
+    print("Substring Index All (single character):", substring_index_all("banana", "a"))  # Output: [1, 3, 5]
+    print("Substring Index All (case sensitive):", substring_index_all("Hello hello HeLLo", "Hello"))  # Output: [0]
+    print("Substring Index All (special characters):", substring_index_all("!@#$%^&*()!@#", "!@"))  # Output: [0, 10]
+    print("Substring Index All (long substring):", substring_index_all("ababababab", "abab"))  # Output: [0, 2, 4]
+    print("String Strip:", string_strip("   Hello, World!   "))  # Output: "Hello, World!"
+    print("String LStrip:", string_lstrip("   Hello, World!   "))  # Output: "Hello, World!   "
+    print("String RStrip:", string_rstrip("   Hello, World!   "))  # Output: "   Hello, World!"
+    print("String Strip (no whitespace):", string_strip("Hello"))  # Output: "Hello"
+    
+

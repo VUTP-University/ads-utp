@@ -77,8 +77,10 @@ def string_replace(str, old, new):
 
 
 # Example usage
-print("Transform String to Uppercase:", transform_string_upper("Hello, World!"))  # Output: 'HELLO, WORLD!'
-print("Transform String to Lowercase:", transform_string_lower("Hello, World!"))  # Output: 'hello, world!'
-print("Capitalize String:", transform_string_capitalize("hello, world!"))  # Output: 'Hello, world!'
-print("Title Case String:", transform_string_title("hello, world!"))  # Output: 'Hello, World!'
-print("Replace 'World' with 'Python':", string_replace("Hello, World!", "World", "Python"))  # Output: 'Hello, Python!'
+if __name__ == "__main__":
+    sample_string = "hello world"
+    print(transform_string_upper(sample_string))        # Output: "HELLO WORLD"
+    print(transform_string_lower(sample_string))        # Output: "hello world"
+    print(transform_string_capitalize(sample_string))   # Output: "Hello world"
+    print(transform_string_title(sample_string))        # Output: "Hello World"
+    print(string_replace(sample_string, "world", "there"))  # Output: "hello there"
