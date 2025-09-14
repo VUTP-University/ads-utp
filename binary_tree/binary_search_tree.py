@@ -85,16 +85,6 @@ class BST():
         else:
             return self._search_rec(node.right, value)
     
-    def _search_rec(self, node, value):
-        """Private helper method for recursive search."""
-        if node is None:
-            return False
-        if value == node.value:
-            return True
-        elif value < node.value:
-            return self._search_rec(node.left, value)
-        else:
-            return self._search_rec(node.right, value)
     
     def in_order_traversal(self):
         """Returns a list of values in in-order traversal.
