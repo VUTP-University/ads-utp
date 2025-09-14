@@ -3,7 +3,7 @@ name = "Algorithms and Data Structures with Python"
 version = "0.1"
 description = "A demo library with various algoriths and data structures with Python"
 authors = [{ name = "Aleksandar Karastoyanov" }]
-readme = "README"
+readme = "README.md"
 requires-python = ">=3.8"
 
 [tool.setuptools]
