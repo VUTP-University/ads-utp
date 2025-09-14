@@ -39,12 +39,12 @@ class Graph():
             
     def add_edge(self, from_node, to_node, weigth=None):
         """
-        Adds a directed edge from from_node to to_node with a specified weight.
+        Adds a directed edge from from_node to to_node with a specified weight(None by default).
         
         Parameters:
         from_node: The starting node of the edge.
         to_node: The ending node of the edge.
-        weight: The weight of the edge.
+        weight: The weight of the edge(None if not passed).
         """
         if from_node not in self.graph:
             self.add_node(from_node)
