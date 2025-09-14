@@ -52,6 +52,47 @@ class Graph():
             self.add_node(to_node)
         self.graph[from_node].append((to_node, weidth))
         
+    
+    def get_neighbors(self, node):
+        """
+        Returns the neighbors of a given node.
+        
+        Parameters:
+        node: The node whose neighbors are to be returned.
+        
+        Returns:
+        list: A list of tuples representing the neighbors and their edge weights.
+        """
+        return self.graph.get(node, [])
+    
+    
+    def has_path(self, start_node, end_node, visited=None):
+        """
+        Determines if there is a path from start_node to end_node using Depth-First Search (DFS).
+        
+        Parameters:
+        start_node: The starting node of the path.
+        end_node: The ending node of the path.
+        visited: A set of visited nodes to avoid cycles (used in recursion).
+        
+        Returns:
+        bool: True if a path exists, False otherwise.
+        """
+        if visited is None:
+            visited = set()
+        
+        if start_node == end_node:
+            return True
+        
+        visited.add(start_node)
+        
+        for neighbor, _ in self.get_neighbors(start_node):
+            if neighbor not in visited:
+                if self.has_path(neighbor, end_node, visited):
+                    return True
+        
+        return False
+    
         
     def display(self):
         """
