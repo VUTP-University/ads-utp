@@ -66,7 +66,7 @@ if __name__ == "__main__":
     empty_tuple, msg = create_empty_tuple()
     print(msg)
 
-    my_tuple, msg = create_typle([1, 2, 3, 4, 5])
+    my_tuple, msg = create_tuple([1, 2, 3, 4, 5])
     print(msg)
 
     element, msg = access_tuple_elements(my_tuple, 2)
