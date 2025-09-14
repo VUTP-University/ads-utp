@@ -16,7 +16,7 @@ def create_empty_tuple():
     return my_tuple, f"Empty tuple created: {type(my_tuple)}"
 
 
-def create_typle(elements):
+def create_tuple(elements):
     """Create and return a tuple with the given elements."""
     my_tuple = tuple(elements)
     return my_tuple, f"Tuple created with elements: {my_tuple}"
