@@ -30,15 +30,10 @@ A comprehensive educational library implementing various algorithms and data str
 
 ## 🛠️ Installation
 
-### Option 1: Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/VUTP-University/ads-utp.git
 cd ads-utp
-```
-
-### Option 2: Install as a Package
-```bash
-pip install -e .
 ```
 
 ## 📚 Usage
