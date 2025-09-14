@@ -1,3 +1,11 @@
+"""
+This module demonstrates various string indexing techniques in Python, including:
+- string_indexing(str, index): Returns the character at the given index.
+- string_slicing_step(str, start, end, step): Returns a substring with a specified step.
+- string_concatenation(str1, str2): Concatenates two strings.
+- string_reverse(str): Returns the reverse of the input string.
+"""
+
 def string_indexing(str, index):
     """
     Returns the character at the given index in the string.

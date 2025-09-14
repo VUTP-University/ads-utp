@@ -1,3 +1,14 @@
+"""
+This module provides functions to transform strings in various ways, such as converting to uppercase, 
+lowercase, capitalizing, title casing, and replacing substrings.
+- transform_string_upper(str): Converts all characters in the string to uppercase.
+- transform_string_lower(str): Converts all characters in the string to lowercase.
+- transform_string_capitalize(str): Capitalizes the first character of the string.
+- transform_string_title(str): Converts the string to title case.
+- string_replace(str, old, new): Replaces all occurrences of 'old' substring with 'new' substring in the string.
+"""
+
+
 def transform_string_upper(str):
     """
     Returns the transformed version of the input string - all characters in uppercase.

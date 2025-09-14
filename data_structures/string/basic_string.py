@@ -1,3 +1,15 @@
+"""
+This module provides basic string manipulation functions such as calculating string length,
+- string_length(str): Returns the length of the string.
+- substring_count(str, substr): Returns the number of occurrences of a substring in the string.
+- substring_index(str, substr): Returns the index of the first occurrence of a substring in the string.
+- substring_index_last(str, substr): Returns the index of the last occurrence of a substring in the string.
+- substring_index_all(str, substr): Returns a list of all indices where the substring occurs in the string.
+- string_strip(str): Removes leading and trailing whitespace from the string.
+- string_lstrip(str): Removes leading whitespace from the string.
+- string_rstrip(str): Removes trailing whitespace from the string.
+"""
+
 def string_length(str):
     """
     Returns the length of the input string.

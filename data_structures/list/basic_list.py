@@ -1,3 +1,15 @@
+"""
+This module provides basic functions to manipulate lists in Python.
+- list_length: Returns the length of the list.
+- list_append: Appends an item to the end of the list.
+- list_pop: Removes and returns the last item from the list.
+- list_insert: Inserts an item at a specified index in the list.
+- list_remove: Removes the first occurrence of an item from the list.
+- list_search: Searches for an item and returns its index or -1 if not found.
+- list_sort: Returns a sorted copy of the list.
+"""
+
+
 def list_length(lst):
     """
     Returns the length of the input list.

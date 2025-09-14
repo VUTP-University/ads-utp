@@ -1,3 +1,11 @@
+"""
+This module provides functions for indexing and slicing lists in Python.
+It includes functions to find the index of an item, slice a list, and reverse a list.
+- list_index(lst, item): Returns the index of the first occurrence of an item in the list.
+- list_slice(lst, start, end): Returns a slice of the list from start to end.
+- list_reverse(lst): Returns a reversed copy of the list.
+"""
+
 def list_index(lst, item):
     """
     Returns the index of the first occurrence of an item in the input list.

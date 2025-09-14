@@ -1,3 +1,12 @@
+"""
+This module provides functions to manipulate and transform lists in Python.
+
+- list_extend: Extends one list with another and returns the new list.
+- replace_index: Replaces an element at a specified index with a new item and returns the new list.
+- list_square: Returns a new list with each element squared. All elements must be numbers(integers or floats).
+
+"""
+
 def list_extend(lst1, lst2):
     """
     Returns a new list that is the result of extending lst1 with lst2.
