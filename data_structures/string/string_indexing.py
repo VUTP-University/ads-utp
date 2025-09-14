@@ -1,0 +1,73 @@
+"""
+This module demonstrates various string indexing techniques in Python, including:
+- string_indexing(str, index): Returns the character at the given index.
+- string_slicing_step(str, start, end, step): Returns a substring with a specified step.
+- string_concatenation(str1, str2): Concatenates two strings.
+- string_reverse(str): Returns the reverse of the input string.
+"""
+
+def string_indexing(str, index):
+    """
+    Returns the character at the given index in the string.
+
+    Args:
+        str (str): The input string.
+        index (int): The index of the character to retrieve.
+
+    Returns:
+        str: The character at the given index.
+    """
+    return str[index]
+
+
+def string_slicing_step(str, start, end, step):
+    """
+    Returns a substring of the input string from the start index to the end index with a given step.
+
+    Args:
+        str (str): The input string.
+        start (int): The start index of the substring.
+        end (int): The end index of the substring.
+        step (int): The step size for slicing.
+
+    Returns:
+        str: The substring from the start index to the end index with the given step.
+    """
+    return str[start:end:step]
+
+
+def string_concatenation(str1, str2):
+    """
+    Returns the concatenation of two strings.
+
+    Args:
+        str1 (str): The first string.
+        str2 (str): The second string.
+
+    Returns:
+        str: The concatenation of the two strings.
+    """
+    return str1 + str2
+
+
+def string_reverse(str):
+    """
+    Returns the reverse of the input string.
+
+    Args:
+        str (str): The input string.
+
+    Returns:
+        str: The reverse of the input string.
+    """
+    return str[::-1]
+
+
+# Example usage
+if __name__ == "__main__":
+    sample_str = "Hello, World!"
+    print("Original String:", sample_str)
+    print("Character at index 7:", string_indexing(sample_str, 7))
+    print("Substring from index 0 to 5 with step 1:", string_slicing_step(sample_str, 0, 5, 1))
+    print("Concatenation of 'Hello' and ' Python':", string_concatenation("Hello", " Python"))
+    print("Reversed String:", string_reverse(sample_str))
