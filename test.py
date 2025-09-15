@@ -27,6 +27,8 @@ from time_complexity.timeit import timeit
 
 # Import Sorting Algorithms
 from algorithms.sort_algorithms.bubble_sort import bubble_sort
+from algorithms.sort_algorithms.counting_sort import counting_sort
+from algorithms.sort_algorithms.heap_sort import heap_sort
 
 
 # You can add test cases here to test the functionalities of the imported modules.
