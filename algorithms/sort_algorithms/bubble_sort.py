@@ -30,8 +30,8 @@ def bubble_sort(arr):
     
     return sorted_arr
 
+# Example usage
 if __name__ == "__main__":
-    # Example usage
     sample_array = [random.randint(1, 10_000) for _ in range(100)]
     print("Original array:", sample_array)
     sorted_array = bubble_sort(sample_array)
