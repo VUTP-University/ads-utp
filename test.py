@@ -1,5 +1,5 @@
 # Import built-in modules
-import random
+import random, math, os, sys, functools
 
 # Import Data Structures Modules
 from data_structures.string.basic_string import *
@@ -30,6 +30,7 @@ from algorithms.sort_algorithms.bubble_sort import bubble_sort
 from algorithms.sort_algorithms.counting_sort import counting_sort
 from algorithms.sort_algorithms.heap_sort import heap_sort
 from algorithms.sort_algorithms.insertion_sort import insertion_sort
+from algorithms.sort_algorithms.selection_sort import selection_sort
 
 
 # You can add test cases here to test the functionalities of the imported modules.
