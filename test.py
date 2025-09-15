@@ -32,5 +32,10 @@ from algorithms.sort_algorithms.heap_sort import heap_sort
 from algorithms.sort_algorithms.insertion_sort import insertion_sort
 from algorithms.sort_algorithms.selection_sort import selection_sort
 
+# Import Searching Algorithms
+from algorithms.search_algorithms.linear_search import linear_search, sentinel_linear_search
+from algorithms.search_algorithms.binary_search import binary_search
+from algorithms.search_algorithms.exponential_search import exponential_search
+from algorithms.search_algorithms.fibonacci_search import fibonacci_search
 
 # You can add test cases here to test the functionalities of the imported modules.
