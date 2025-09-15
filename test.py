@@ -19,4 +19,7 @@ from binary_tree.binary_search_tree import BST
 # Import Graph Modules
 from graph.graph import Graph
 
+# Import Universal Timeit Decorator
+from time_complexity.timeit import timeit
+
 # You can add test cases here to test the functionalities of the imported modules.
