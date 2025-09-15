@@ -1,3 +1,6 @@
+# Import built-in modules
+import random
+
 # Import Data Structures Modules
 from data_structures.string.basic_string import *
 from data_structures.string.string_indexing import *
@@ -21,5 +24,9 @@ from graph.graph import Graph
 
 # Import Universal Timeit Decorator
 from time_complexity.timeit import timeit
+
+# Import Sorting Algorithms
+from algorithms.sort_algorithms.bubble_sort import bubble_sort
+
 
 # You can add test cases here to test the functionalities of the imported modules.
