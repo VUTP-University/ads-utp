@@ -35,16 +35,17 @@ def sentinel_linear_search(arr, target):
     if n == 0:
         return -1
 
-    # Place the target at the end as a sentinel
-    last = arr[-1]
-    arr[-1] = target
+    # Work on a copy to avoid modifying the original array
+    arr_copy = arr[:]
+    last = arr_copy[-1]
+    arr_copy[-1] = target
 
     index = 0
-    while arr[index] != target:
+    while arr_copy[index] != target:
         index += 1
 
-    # Restore the last element
-    arr[-1] = last
+    # Restore the last element (not strictly necessary for the copy, but for completeness)
+    arr_copy[-1] = last
 
     if index < n - 1 or arr[-1] == target:
         return index
