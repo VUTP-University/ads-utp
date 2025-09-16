@@ -30,7 +30,6 @@ def quick_sort(arr):
         return quick_sort(left) + middle + quick_sort(right)
 
 
-
 # Example usage
 if __name__ == "__main__":
     sample_array = [random.randint(1, 10_000) for _ in range(100)]
